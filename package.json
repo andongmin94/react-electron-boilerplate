@@ -1,0 +1,71 @@
+{
+  "name": "react-electron-boilerplate",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": "andongmin",
+  "description": "react-electron-boilerplate",
+  "main": "src/electron/main.js",
+  "build": {
+    "appId": "react-electron-boilerplate",
+    "mac": {
+      "icon": "/src/electron/icon.png"
+    },
+    "win": {
+      "icon": "/src/electron/icon.png"
+    },
+    "productName": "react-electron-boilerplate",
+    "copyright": "Copyright © andongmin",
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "dist/**/*",
+      "src/electron/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist_electron"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "elec": "electron .",
+    "app": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && npm run elec\"",
+    "web:build": "tsc && vite build",
+    "app:build": "electron-builder"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.354.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.18",
+    "concurrently": "^8.2.2",
+    "electron": "^29.1.1",
+    "electron-builder": "^24.13.3",
+    "electron-localshortcut": "^3.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4",
+    "wait-on": "^7.2.0"
+  }
+}
