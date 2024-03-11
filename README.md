@@ -1,5 +1,7 @@
 # React + TypeScript + Vite + Electron Boilerplate
 
+<img src="https://github.com/andongmin94/react-electron-boilerplate/assets/110483588/0f36682b-6ab3-40bf-b892-8351a6a5cd88">
+
 Used CSS : Tailwind + Shadcn
 
 This is boilerplate that based in vite build tool with react + electron.
