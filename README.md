@@ -16,6 +16,8 @@ npm run app : executing electron dev server after executing react web dev server
 npm run app:build : electron build
 ```
 
-If you want to deploy electron app, you need to do app:build after changing BASE_URL in main.js localhost:3000 to your url.
+Before doing app:build, changing BASE_URL in main.js localhost:3000 to your url.
 
-### Copyright © andongmin94
+## License
+
+Licensed under the [MIT license](https://github.com/andongmin94/react-electron-boilerplate/blob/main/LICENSE.md).
