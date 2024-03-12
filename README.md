@@ -17,8 +17,8 @@ npm run web:build : only react + vite build
 
 npm run app : executing electron dev server after executing react web dev server
 
-// Before doing app:build, changing BASE_URL in main.js localhost:3000 to your url.
 npm run app:build : electron build
+// Before doing app:build, changing BASE_URL in main.js localhost:3000 to your url.
 ```
 
 ## License
