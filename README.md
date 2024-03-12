@@ -20,4 +20,4 @@ Before doing app:build, changing BASE_URL in main.js localhost:3000 to your url.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/andongmin94/react-electron-boilerplate/blob/main/LICENSE.md).
+Licensed under the [MIT license](https://github.com/andongmin94/react-electron-boilerplate/blob/main/LICENCE.md).
