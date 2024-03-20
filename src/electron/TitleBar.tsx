@@ -62,16 +62,16 @@ export default function TitleBar() {
     window.electron.send("hidden");
   };
   return (
-    <div className="fixed flex justify-end z-10 border" style={{ WebkitAppRegion: "drag", width: "100%", borderColor: "rgba(0, 0, 0, 0)", backgroundColor: "#262626" } as React.CSSProperties }>
-      <div style={{ WebkitAppRegion: "no-drag" } as React.CSSProperties}>
-        <Button onClick={minimize} className="" size="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>  
+    <div className="fixed flex justify-end w-full bg-neutral-800 z-10" style={{ WebkitAppRegion: "drag" } as React.CSSProperties }>
+      <div style={{ WebkitAppRegion: "no-drag" } as React.CSSProperties }>
+        <Button onClick={minimize} size="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/></svg>  
         </Button>&nbsp;
-        <Button onClick={maximize} className="" size="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
+        <Button onClick={maximize} size="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/></svg>
         </Button>&nbsp;
-        <Button onClick={hidden} className="" size="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        <Button onClick={hidden} size="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </Button>
       </div>
     </div>
