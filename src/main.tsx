@@ -7,7 +7,7 @@ import TitleBar from "@/electron/TitleBar";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
-    {typeof window.electron !== "undefined" && <TitleBar />}
+    <TitleBar />
     <App />
   </>,
 )

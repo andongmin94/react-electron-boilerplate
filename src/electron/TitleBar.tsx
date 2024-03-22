@@ -62,6 +62,8 @@ export default function TitleBar() {
     window.electron.send("hidden");
   };
   return (
+    <>
+    {typeof window.electron !== "undefined" && 
     <div className="fixed flex justify-end w-full bg-neutral-800 z-10" style={{ WebkitAppRegion: "drag" } as React.CSSProperties }>
       <div style={{ WebkitAppRegion: "no-drag" } as React.CSSProperties }>
         <Button onClick={minimize} size="icon">
@@ -74,6 +76,7 @@ export default function TitleBar() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </Button>
       </div>
-    </div>
+    </div>}
+    </>
   );
 }
