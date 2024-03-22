@@ -1,6 +1,7 @@
 # React + TypeScript + Vite + Electron Boilerplate
 
-<img src="https://github.com/andongmin94/react-electron-boilerplate/assets/110483588/0f36682b-6ab3-40bf-b892-8351a6a5cd88">
+<img src="https://github.com/andongmin94/electron-boilerplate/assets/110483588/890ea060-a01c-415d-ad0a-5612120d8fdc">
+
 
 Used CSS : Tailwind + Shadcn
 
@@ -23,4 +24,4 @@ npm run app:build : electron build
 
 ## License
 
-Licensed under the [MIT license](https://github.com/andongmin94/react-electron-boilerplate/blob/main/LICENCE.md).
+Licensed under the [MIT license](https://github.com/andongmin94/electron-boilerplate/blob/react-electron/LICENCE.md).
