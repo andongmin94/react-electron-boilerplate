@@ -24,4 +24,4 @@ npm run app:build : electron build
 
 ## License
 
-Licensed under the [MIT license](https://github.com/andongmin94/electron-boilerplate/blob/react-electron/LICENCE.md).
+Licensed under the [MIT license](https://github.com/andongmin94/electron-boilerplate/blob/react/LICENCE.md).
