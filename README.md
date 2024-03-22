@@ -11,9 +11,9 @@ script
 
 npm run dev : only executing react web dev server
 
-npm run elec : only executing electron dev server
+npm run build : only react + vite build
 
-npm run web:build : only react + vite build
+npm run elec : only executing electron dev server
 
 npm run app : executing electron dev server after executing react web dev server
 
