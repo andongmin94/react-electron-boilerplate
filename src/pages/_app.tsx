@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import TitleBar from "@/components/TitleBar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image" href="/icon.png" />
         <link rel="shortcut icon" href="/icon.png" />
       </Head>
+      <TitleBar />
       <Component {...pageProps} />
     </>
   );
