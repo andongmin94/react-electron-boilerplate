@@ -1,7 +1,6 @@
 # React + TypeScript + Vite + Electron Boilerplate
 
-<img src="https://github.com/andongmin94/electron-boilerplate/assets/110483588/890ea060-a01c-415d-ad0a-5612120d8fdc">
-
+<img src="https://github.com/andongmin94/electron-boilerplate/assets/110483588/1131accd-8ea3-4e30-8af1-f551c4e486b1">
 
 Used CSS : Tailwind + Shadcn
 
