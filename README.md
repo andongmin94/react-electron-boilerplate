@@ -1,6 +1,6 @@
 # Next.js (app router) + TypeScript + Electron Boilerplate
 
-<img src="https://github.com/andongmin94/electron-boilerplate/assets/110483588/b4909212-8a05-4674-92a6-e103e098b815">
+<img src="https://github.com/andongmin94/electron-boilerplate/assets/110483588/078e0c84-0420-4faa-b222-161ebc836344">
 
 Used CSS : Tailwind + Shadcn
 
