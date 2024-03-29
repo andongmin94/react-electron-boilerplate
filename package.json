@@ -9,10 +9,10 @@
   "build": {
     "appId": "react-electron-boilerplate",
     "mac": {
-      "icon": "icon.png"
+      "icon": "public/icon.png"
     },
     "win": {
-      "icon": "icon.png"
+      "icon": "public/icon.png"
     },
     "productName": "react-electron-boilerplate",
     "copyright": "Copyright © andongmin",
@@ -23,7 +23,8 @@
     "files": [
       "dist/**/*",
       "src/electron/**/*",
-      "node_modules/**/*"
+      "node_modules/**/*",
+      "public/**/*"
     ],
     "directories": {
       "buildResources": "assets",
@@ -66,11 +67,14 @@
     "@radix-ui/react-toggle": "^1.0.3",
     "@radix-ui/react-toggle-group": "^1.0.4",
     "@radix-ui/react-tooltip": "^1.0.7",
+    "axios": "^1.6.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.0.0",
+    "electron-localshortcut": "^3.2.1",
+    "https": "^1.0.0",
     "input-otp": "^1.2.2",
     "lucide-react": "^0.354.0",
     "next-themes": "^0.3.0",
@@ -97,7 +101,6 @@
     "dotenv": "^16.4.5",
     "electron": "^28.2.6",
     "electron-builder": "^24.13.3",
-    "electron-localshortcut": "^3.2.1",
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
