@@ -21,7 +21,8 @@
     "files": [
       "dist/**/*",
       "electron/**/*",
-      "node_modules/**/*"
+      "node_modules/**/*",
+      "public/**/*"
     ],
     "directories": {
       "buildResources": "assets",
