@@ -25,7 +25,7 @@ npm run app:build : electron build
 
 - [x] Make react, next.js with typescript and electron.
 - [ ] Make vue with typescript and electron.
-- [ ] Make react, next.js, vue with javascript and electron.
+- [ ] Make react, next.js, vue with javascript and electron. (non-TS, add "extends": null in "build")
 - [ ] Make npm modules that packing named "samsung-electron".
 
 ## License
