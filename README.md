@@ -21,6 +21,13 @@ npm run app:build : electron build
 // Before doing app:build, changing BASE_URL in main.mjs localhost:3000 to your url.
 ```
 
+## Roadmap
+
+- [x] Make react, next.js with typescript and electron.
+- [ ] Make vue with typescript and electron.
+- [ ] Make react, next.js, vue with javascript and electron.
+- [ ] Make npm modules that packing named "samsung-electron".
+
 ## License
 
-Licensed under the [MIT license](https://github.com/andongmin94/electron-boilerplate/blob/next-page/LICENCE.md).
+Licensed under the [MIT license](https://github.com/andongmin94/electron-boilerplate/blob/react/LICENCE.md).
