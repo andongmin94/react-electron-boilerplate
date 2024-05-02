@@ -21,9 +21,8 @@
       "allowToChangeInstallationDirectory": true
     },
     "files": [
-      "dist/**/*",
-      "src/electron/**/*",
       "node_modules/**/*",
+      "src/electron/**/*",
       "public/**/*"
     ],
     "directories": {
