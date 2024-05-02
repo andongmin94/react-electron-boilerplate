@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "andongmin",
   "description": "next-page-electron-boilerplate",
-  "main": "src/electron/main.mjs",
+  "main": "src/electron/main.js",
   "build": {
     "appId": "next-page-electron-boilerplate",
     "mac": {
