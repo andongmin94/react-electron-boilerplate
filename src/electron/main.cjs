@@ -51,14 +51,9 @@ app.whenReady().then(createWindow).then(() => {
     { label: "끄기", type: "normal", click: () => app.quit() }
   ]));
 
-  // F5 키를 누르면 현재 포커스된 창 새로고침
-  globalShortcut.register('F5', () => { console.log('F5 is pressed'); mainWindow.reload() });
-
-  // F12 개발자 도구 열기
-  electronLocalshortcut.register(mainWindow, "F12", () => { console.log("F12 is pressed"); mainWindow.webContents.toggleDevTools() });
-  
-  // 애플리케이션이 종료되기 전에 단축키 해제
-  app.on('will-quit', () => { globalShortcut.unregisterAll(); });
+  // F5 새로고침, F12 개발자 도구 열기
+  electronLocalshortcut.register("F5", () => { console.log('F5 is pressed'); mainWindow.reload() });
+  electronLocalshortcut.register("F12", () => { console.log("F12 is pressed"); mainWindow.webContents.toggleDevTools() });
 });
 
 module.exports = { mainWindow };
