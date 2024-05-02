@@ -3,9 +3,7 @@
 
 node_modules
 dist
-dist-ssr
-dev-dist
-dist_electron
+dist_app
 *.local
 
 ### C++ ###
