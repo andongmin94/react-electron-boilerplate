@@ -1,6 +1,7 @@
 {
   "name": "next-page-electron-boilerplate",
   "version": "0.0.1",
+  "license": "MIT",
   "author": "andongmin",
   "description": "next-page-electron-boilerplate",
   "main": "src/electron/main.js",
