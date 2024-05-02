@@ -28,14 +28,13 @@
     ],
     "directories": {
       "buildResources": "assets",
-      "output": "dist_electron"
+      "output": "dist_app"
     }
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "elec": "electron .",
-    "app": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && npm run elec\"",
+    "app": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
     "app:build": "electron-builder"
   },
   "dependencies": {
