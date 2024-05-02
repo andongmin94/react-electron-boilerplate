@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "andongmin",
   "description": "react-electron-boilerplate",
-  "main": "src/electron/main.js",
+  "main": "src/electron/main.cjs",
   "build": {
     "appId": "react-electron-boilerplate",
     "mac": {

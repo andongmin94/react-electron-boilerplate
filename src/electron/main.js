@@ -1,27 +1,24 @@
 // 일렉트론 모듈
-import { fileURLToPath } from "url";
-import { join, dirname } from "path";
-import electronLocalshortcut from "electron-localshortcut";
-import { app, BrowserWindow, ipcMain, Tray, Menu, nativeImage, globalShortcut } from "electron";
+const path = require('node:path')
+const electronLocalshortcut = require("electron-localshortcut");
+const { app, BrowserWindow, ipcMain, Tray, Menu, nativeImage, globalShortcut } = require("electron");
 
 // 웹 모듈
-import axios from "axios";
-import https from "https";
-import dotenv from "dotenv";
+const axios = require("axios");
+const https = require("https");
+const dotenv = require("dotenv");
 
 // 일렉트론 생성 함수
-export let mainWindow;
+let mainWindow;
 const createWindow = () => {
-
   // 브라우저 창을 생성합니다.
   mainWindow = new BrowserWindow({
     width: 1600,
     height: 900,
     frame: false,
-
-    icon: join(dirname(fileURLToPath(import.meta.url)), "../../public/icon.png"),
+    icon: path.join(__dirname, "../../public/icon.png"),
     webPreferences: {
-      preload: join(dirname(fileURLToPath(import.meta.url)), "preload.js")
+      preload: path.join(__dirname, "preload.js")
     }
   });
 
@@ -33,8 +30,7 @@ const createWindow = () => {
 
 // 이 메소드는 Electron의 초기화가 완료되고
 // 브라우저 윈도우가 생성될 준비가 되었을때 호출된다.
-export default app.whenReady().then(createWindow).then(() => {
-
+app.whenReady().then(createWindow).then(() => {
   // 기본 생성 세팅
   app.on("window-all-closed", () => { if (process.platform !== "darwin") app.quit() });
   app.on("activate", () => { if (BrowserWindow.getAllWindows().length === 0) createWindow() });
@@ -47,7 +43,7 @@ export default app.whenReady().then(createWindow).then(() => {
   });
 
   // 트레이 세팅
-  const tray = new Tray(nativeImage.createFromPath(join(dirname(fileURLToPath(import.meta.url)), "../../public/icon.png")));
+  const tray = new Tray(nativeImage.createFromPath(path.join(__dirname, "../../public/icon.png")));
   tray.setToolTip("react-electron-boilerplate");
   tray.on("double-click", () => mainWindow.show());
   tray.setContextMenu(Menu.buildFromTemplate([
@@ -64,5 +60,7 @@ export default app.whenReady().then(createWindow).then(() => {
   // 애플리케이션이 종료되기 전에 단축키 해제
   app.on('will-quit', () => { globalShortcut.unregisterAll(); });
 });
+
+module.exports = { mainWindow };
 
 // 여기서부터 코드 작성
