@@ -53,17 +53,17 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
 export default function TitleBar() {
   const minimize = () => {
-    window.electron.send("minimize");
+    frontron.send("minimize");
   };
   const maximize = () => {
-    window.electron.send("maximize");
+    frontron.send("maximize");
   };
   const hidden = () => {
-    window.electron.send("hidden");
+    frontron.send("hidden");
   };
   return (
     <>
-    {typeof window.electron !== "undefined" && 
+    {typeof frontron !== "undefined" && 
     <div className="fixed flex justify-end w-full bg-neutral-800" style={{ WebkitAppRegion: "drag" } as React.CSSProperties }>
       <div style={{ WebkitAppRegion: "no-drag" } as React.CSSProperties }>
         <Button onClick={minimize} size="icon">
