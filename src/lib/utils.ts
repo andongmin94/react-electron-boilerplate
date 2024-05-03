@@ -8,5 +8,3 @@ export function cn(...inputs: ClassValue[]) {
 declare global {
   let frontron: any;
 }
-
-export {};
