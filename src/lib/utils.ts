@@ -1,18 +1,10 @@
-import { type ClassValue, clsx } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
-}
-
-interface ElectronAPI {
-  send: (channel: string, data?: any) => void;
-  on: (channel: string, func: (event: any, ...args: any[]) => void) => void;
-  removeAllListeners: (channel: string) => void;
+  return twMerge(clsx(inputs));
 }
 
 declare global {
-  interface Window {
-    electron: ElectronAPI;
-  }
+  let frontron: any;
 }
