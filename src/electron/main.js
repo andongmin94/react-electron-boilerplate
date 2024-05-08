@@ -69,7 +69,7 @@ app.whenReady().then(createWindow).then(() => {
   });
   // 트레이 세팅
   const tray = new Tray(nativeImage.createFromPath(path.join(__dirname, "../../public/icon.png")));
-  tray.setToolTip("react-electron-boilerplate");
+  tray.setToolTip("next-page-electron-boilerplate");
   tray.on("double-click", () => mainWindow.show());
   tray.setContextMenu(Menu.buildFromTemplate([
     { label: "Open", type: "normal", click: () => mainWindow.show() },
